@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Aplicación Web - Identificador de sonido de animales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&family=Ibarra+Real+Nova:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="https://teachablemachine.withgoogle.com/models/" href="https://teachablemachine.withgoogle.com/models/oY9h3yP6J/model.json">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>Animales controlados por sonido</h2>      
+      <p>Nota: Haz diferentes sonidos como aplausos, chasquidos o campanas para hacer bailar a los animales.</p>    
+    </div>
+    <div class="main_div">
+      <center>
+      <br>
+      <button class="btn btn-warning" onclick="startClassification();"> COMENZAR </button>
+      <h3 id="gotResults_label">Escucho:  </h3>
+      <h4 id="gotResults_confidence">Precisión:  </h4>
+        <br>
+        <img src="perrito.png" id="perrito" width="300" height="300">
+        <img src="gatito png.jpg" id="gatito" width="300" height="300">
+        <img src="ave png.png" id="ave" width="300" height="300">
+        <img src="caballo png.jpg" id="caballo" width="300" height="300">
+      </center>
+      </div>
+      <div class="copy_right_footer">
+        Creado por Carlos
+      </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
